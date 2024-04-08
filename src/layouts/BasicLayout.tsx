@@ -1,10 +1,13 @@
 import React from "react";
+import MenuBar from "./MenuBar";
 import Bookmark from "@/pages/Bookmark";
+
+import '../global.less';
 
 const BasicLayout: React.FC = () => {
   return (
     <div>
-      这是我的程序布局页面
+      <MenuBar />
       <Bookmark />
     </div>
   );

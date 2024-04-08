@@ -2,6 +2,7 @@ import {defineConfig} from "umi";
 
 export default defineConfig({
   title: 'MyCollection',
+  dva: {},
   routes: [
     {
       path: "/",
@@ -9,5 +10,7 @@ export default defineConfig({
     }
   ],
   outputPath: "dist",
-  plugins: ['umi-plugin-electron-builder'],
+  plugins: [
+    'umi-plugin-electron-builder'
+  ],
 });
