@@ -4,15 +4,28 @@
   "private": true,
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "electron": "umi dev electron",
+    "rebuild-deps": "electron-builder install-app-deps",
+    "electron:init": "umi electron init",
+    "electron:dev": "umi dev electron",
+    "electron:dir": "umi build electron --dir",
+    "electron:build:win": "umi build electron --win",
+    "electron:build:mac": "umi build electron --mac",
+    "electron:build:linux": "umi build electron --linux"
   },
   "dependencies": {
+    "@ant-design/pro-components": "^2.7.0",
+    "antd": "^5.16.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@types/node": "^20.9.0",
+    "@umijs/max": "^4.1.8",
     "electron": "^29.2.0",
     "electron-builder": "^24.13.3",
-    "typescript": "^5.4.4"
+    "typescript": "^5.4.4",
+    "umi-plugin-electron-builder": "^4.0.7"
   }
 }
