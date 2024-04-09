@@ -1,7 +1,10 @@
+.DS_Store/
 .vscode/
 .idea/
 .umi/
+.umi-production/
 node_modules/
 dist/
+dist_electron/
 
 package-lock.json

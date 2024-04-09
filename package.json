@@ -5,13 +5,15 @@
   "main": "main.js",
   "scripts": {
     "start": "max dev electron",
+    "web:start": "max dev",
+    "web:build": "max build",
     "rebuild-deps": "electron-builder install-app-deps",
     "electron:init": "max electron init",
-    "electron:dev": "max dev electron",
-    "electron:dir": "max build electron --dir",
     "electron:build:win": "max build electron --win",
     "electron:build:mac": "max build electron --mac",
-    "electron:build:linux": "max build electron --linux"
+    "electron:build:linux": "max build electron --linux",
+    "electron:dev": "umi dev electron",
+    "electron:dir": "umi build electron --dir"
   },
   "dependencies": {
     "@ant-design/pro-components": "^2.7.0",

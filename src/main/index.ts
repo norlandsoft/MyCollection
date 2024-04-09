@@ -11,13 +11,15 @@ protocol.registerSchemesAsPrivileged([
 
 function createWindow() {
   mainWindow = new BrowserWindow({
-    width: 800,
+    title: '我的收藏',
+    width: 960,
     height: 600,
     webPreferences: {
       contextIsolation: true,
       preload: path.join(__dirname, 'preload.js'),
     },
   });
+
   if (isDevelopment) {
     mainWindow.loadURL('http://localhost:8000');
   } else {
@@ -26,7 +28,7 @@ function createWindow() {
   }
 }
 
-app.on('ready', async () => {
+app.whenReady().then(() => {
   createWindow();
 });
 
