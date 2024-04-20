@@ -1,7 +1,7 @@
 import React from "react";
-import {Button} from '@/components/air-design';
+import {Button} from 'aird';
 
-const Bookmark: React.FC = () => {
+const Bookmark: React.FC = (props: any) => {
   return (
     <div>
       <Button type="primary">Bookmark</Button>

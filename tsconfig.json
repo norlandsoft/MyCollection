@@ -12,6 +12,9 @@
       ],
       "umi/typings": [
         "src/.umi/typings"
+      ],
+      "aird": [
+        "node_modules/air-design/lib"
       ]
     },
     "module": "ES2022",
@@ -31,6 +34,7 @@
     "noImplicitAny": false
   },
   "include": [
+    "node_modules/air-design/lib/**/*",
     "src/**/*",
     ".umirc.ts",
     "module.d.ts",

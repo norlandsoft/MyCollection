@@ -1,7 +1,7 @@
 import React from "react";
 import {connect} from 'umi';
 import {Tooltip} from "antd";
-import {Icon} from '@/components/air-design';
+import {Icons} from 'aird';
 import styles from './MenuBar.less';
 
 const MenuBar: React.FC = (props: any) => {
@@ -58,7 +58,7 @@ const MenuBar: React.FC = (props: any) => {
                     currentPage === item.id ?
                       <div className={styles.selected}/> : null
                   }
-                  <Icon name={item.icon} size={22} thickness={1.5}/>
+                  <Icons name={item.icon} size={22} thickness={1.5}/>
                 </div>
               </div>
             </Tooltip>
@@ -76,7 +76,7 @@ const MenuBar: React.FC = (props: any) => {
                     currentPage === 'setting' ?
                       <div className={styles.selected}/> : null
                   }
-                  <Icon name={'settings'} size={22} thickness={1.5}/>
+                  <Icons name={'settings'} size={22} thickness={1.5}/>
                 </div>
               </div>
             </Tooltip>
